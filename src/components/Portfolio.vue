@@ -12,7 +12,7 @@
       tel que défini dans le tableau isActive.-->
 
       <div v-for="creaction in filteredPortfolio" :key="creaction.img">
-        <a href="/public/Mon Curriculum vitæ.pdf" v-if="creaction.tag === 'cv'">
+        <a href="/public/Mon Curriculum vitæ.pdf" target="_blank" v-if="creaction.tag === 'cv'">
           <img
             id="p_1"
             src="/public/Mon Curriculum vitæ.pdf"
@@ -23,6 +23,7 @@
 
         <a
           href="/public/cdc-la-socketterie.pdf"
+          target="_blank"
           v-else-if="creaction.tag === 'cahier'"
         >
           <img
@@ -35,6 +36,7 @@
 
         <a
           href="/public/Commentaires.pdf"
+          target="_blank"
           v-else-if="creaction.tag === 'commentaires'"
         >
           <img
